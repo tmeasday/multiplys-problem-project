@@ -1,0 +1,17 @@
+<head>
+	<title>shit</title>
+</head>
+
+<body>
+	{{> loginButtons}}
+	{{> messages}}
+</body>
+
+<template name="messages">
+	{{#each list}}
+	<div class="message">
+		<time datetime="{{created}}" class="pull-right">{{created}}</time>
+		<h1>{{name}}</h1>
+	</div>
+	{{/each}}
+</template>
